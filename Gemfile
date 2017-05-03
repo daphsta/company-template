@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery'
+end
+
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
-# gem "middleman-livereload", "~> 3.4.3"
-
+gem 'bourbon'
+gem 'neat'
