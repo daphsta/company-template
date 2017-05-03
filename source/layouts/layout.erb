@@ -6,11 +6,25 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "Anyco" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
-    <%= yield %>
+  <body class="<%= page_classes %>">
+    <header>
+      <% link_to "/", class: "logo-link" do %>
+        <%= image_tag "company-logo.png", width: 100 %>
+      <% end %>
+      <nav>
+        <ul>
+          <li><%= link_to "Stairs Gallery", "/gallery" %></li>
+          <li><%= link_to "Services", "/services" %></li>
+          <li><%= link_to "Contact Us", "/contact" %></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <%= yield %>
+    </div>
   </body>
 </html>

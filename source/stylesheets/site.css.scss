@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.content {
+  max-width: 860px;
+  margin: 40px auto;
+}
+
+.content h2 {
+  color: #222;
+}
+
+.logo-link {
+  flex-grow: 0.1;
+}
+
+.logo-link img {
+  max-width: 50px;
+}
+
+header {
+  align-content: center;
+  display: flex;
+  background-color: #fff;
+  padding: 10px 20px 5px 20px;
+}
+
+nav {
+  flex-grow: 3;
+}
+
+nav a {
+  color: #999;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+}
+
